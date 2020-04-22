@@ -1,0 +1,28 @@
+ <h2>Телефоны</h2>
+<div class="wrapper ">
+<div class="container-sm">
+  <div class="info">
+<button type="button" class="btn btn-primary" (click)="samsung()">Samsung</button>
+<button type="button" class="btn btn-secondary" (click)="iphone()">Iphone</button>
+<button type="button" class="btn btn-success" (click)="xiaomi()">Xiaomi</button>
+<button type="button" class="btn btn-danger" (click)="zte()">ZTE</button>
+
+  <h4>{{brand}} {{model}}</h4>
+  <h5>Характеристики</h5>
+  <p>ОЗУ: {{ram}}</p>
+  <p>Дисплей: {{display}}</p>
+  <h5>Цвет:</h5>
+  <ul>
+    <li *ngFor='let item of color'>{{item}}</li>
+  </ul>
+  <p>Батарея: {{battarey}}</p>
+  <h5>Беспроводные технологии:</h5>
+  <ul>
+    <li *ngFor='let item of wireles'>{{item}}</li>
+  </ul>
+  </div>
+  <div class="foto">
+    <img src="" alt="">
+  </div>
+  </div>
+</div>
